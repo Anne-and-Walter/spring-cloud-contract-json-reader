@@ -1,0 +1,13 @@
+{
+  "id" : "4ca72238-2101-4930-b2bc-b4ac93a920a2",
+  "request" : {
+    "url" : "/api/hats",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[{\"name\": \"sombrero\", \"color\": \"plaid\"}, {\"name\": \"baseball cap\", \"color\": \"zebra stripe\"}, {\"name\": \"tophat\", \"color\": \"polka-dot\"}]",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "4ca72238-2101-4930-b2bc-b4ac93a920a2"
+}
