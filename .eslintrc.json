@@ -1,0 +1,14 @@
+{
+  "extends": "standard",
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": [2, "always"],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "semi": [2, "always"],
+    "space-before-function-paren": 0
+  },
+  "plugins": ["jest"],
+  "env": {
+    "jest/globals": true
+  }
+}
