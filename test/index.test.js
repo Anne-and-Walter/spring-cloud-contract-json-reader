@@ -1,4 +1,4 @@
-describe('spring-cloud-contract-json-reader', () => {
+describe('contract-json-reader', () => {
   it('should read contract test data from the designated file location', async () => {
     process.env.CONTRACT_JSON_BASE_PATH = 'test/fixtures';
 

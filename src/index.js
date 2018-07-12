@@ -8,7 +8,7 @@ const getTrimmedRepoRoot = async () => {
   const trimmedRepoRootPath = repoRootPathWithNewlines.stdout.replace('\n', '');
 
   return trimmedRepoRootPath;
-}
+};
 
 const readJsonContractFile = async (filename) => {
   const readFilePromisified = util.promisify(require('fs').readFile);
@@ -24,6 +24,6 @@ const readJsonContractFile = async (filename) => {
   );
 
   return JSON.parse(jsonContractFile).response.body;
-}
+};
 
 module.exports = readJsonContractFile;
