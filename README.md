@@ -17,7 +17,9 @@ yarn install contract-json-reader
 ## Usage 🤹
 
 1. Set environment variable ```CONTRACT_JSON_BASE_PATH``` to wherever your contract test json is located relative to the root of your project's git repository. 
-E.g.: ```/build/stubs/META-INF/com.somepackage/myfancyapp/0.0.1-SNAPSHOT/mappings/```
+E.g.: ```build/stubs/META-INF/com.somepackage/myfancyapp/0.0.1-SNAPSHOT/mappings```
+
+**Note**: No need for leading or trailing slashes.
 
 2. Import the Contract JSON Reader into your tests and start asserting on response body data!
 ```$xslt

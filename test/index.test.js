@@ -22,16 +22,16 @@ describe('contract-json-reader', () => {
     }
   });
 
-  it('should fail a promise if env var "CONTRACT_JSON_BASE_PATH" is not set', async () => {
+  it('should throw if env var "CONTRACT_JSON_BASE_PATH" is not set', async () => {
     expect.assertions(1);
-    process.env.CONTRACT_JSON_BASE_PATH = undefined;
+    process.env.CONTRACT_JSON_BASE_PATH = '';
 
     const readJsonContractFile = require('../src/index');
 
     try {
       await readJsonContractFile('sample-contract.json');
     } catch (e) {
-      expect(e).not.toBeNull();
+      expect(e.message).toContain('Expected environment variable CONTRACT_JSON_BASE_PATH to be set');
     }
   });
 });

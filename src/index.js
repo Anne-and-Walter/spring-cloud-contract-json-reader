@@ -15,6 +15,10 @@ const readJsonContractFile = async (filename) => {
 
   const repoRoot = await getTrimmedRepoRoot();
 
+  if (!process.env.CONTRACT_JSON_BASE_PATH) {
+    throw new Error('Expected environment variable CONTRACT_JSON_BASE_PATH to be set');
+  }
+
   const jsonContractFile = await readFilePromisified(
     [
       repoRoot,
