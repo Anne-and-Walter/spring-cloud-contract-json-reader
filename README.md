@@ -5,13 +5,13 @@ Read Contract JSON directly in your consumer contract tests and banish magic num
 ## Install 🚚
 
 ```$xslt
-npm install contract-json-reader
+npm install spring-cloud-contract-json-reader
 ```
 
 or
 
 ```$xslt
-yarn install contract-json-reader
+yarn install spring-cloud-contract-json-reader
 ```
 
 ## Usage 🤹
@@ -23,7 +23,7 @@ E.g.: ```build/stubs/META-INF/com.somepackage/myfancyapp/0.0.1-SNAPSHOT/mappings
 
 2. Import the Contract JSON Reader into your tests and start asserting on response body data!
 ```$xslt
-const readJsonContractFile = require('contract-json-reader');
+const readJsonContractFile = require('spring-cloud-contract-json-reader');
 
 const contractResponseBody = await readJsonContractFile('shouldReturnListOfSuperheroes.json');
 
