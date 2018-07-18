@@ -1,5 +1,5 @@
 {
-  "name": "contract-json-reader",
+  "name": "spring-cloud-contract-json-reader",
   "version": "1.0.0",
   "description": "Reads Spring Cloud Contract JSON in order to use it in consumer contract tests",
   "author": "Anne LoVerso and Walter Scarborough",
