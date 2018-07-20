@@ -1,6 +1,6 @@
-# Node Contract JSON Reader 🎆
+# JavaScript Spring Cloud Contract JSON Reader 🎆
 
-Read Contract JSON directly in your consumer contract tests and banish magic numbers once and for all! 😱
+Read Spring Cloud Contract JSON directly in your consumer contract tests and banish magic numbers once and for all! 😱
 
 ## Install 🚚
 
@@ -21,7 +21,7 @@ E.g.: ```build/stubs/META-INF/com.somepackage/myfancyapp/0.0.1-SNAPSHOT/mappings
 
 **Note**: No need for leading or trailing slashes.
 
-2. Import the Contract JSON Reader into your tests and start asserting on response body data!
+2. Import the Spring Cloud Contract JSON Reader into your tests and start asserting on response body data!
 ```$xslt
 const readJsonContractFile = require('spring-cloud-contract-json-reader');
 
